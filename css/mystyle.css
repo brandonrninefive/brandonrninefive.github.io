@@ -1,0 +1,29 @@
+.jumbotron
+{
+  text-align:center;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor:default;
+  background:no-repeat;
+  background-size: cover;
+}
+body
+{
+  background-repeat:no-repeat;
+  background-size:cover
+}
+footer
+{
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  background-color:#282828;
+  color:#FFFFFF;
+  cursor:default;
+}
