@@ -1,74 +1,29 @@
+.jumbotron
+{
+  text-align:center;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor:default;
+  background:no-repeat;
+  background-size: cover;
+}
 body
 {
-  background-color:#b3ccff;
+  background-repeat:no-repeat;
+  background-size:cover
+}
+footer
+{
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   text-align: center;
-}
-a
-{
-  text-decoration: none;
-}
-.container
-{
-  display:inline-block;
-  font-family: Tahoma;
+  background-color:#282828;
+  color:#FFFFFF;
   cursor:default;
-  text-align:left;
-}
-p
-{
-  line-height:200%;
-}
-#Name
-{
-  margin-top:-800px;
-  visibility: hidden;
-}
-#Apps
-{
-  display:none;
-}
-#Games
-{
-  display:none;
-}
-#Websites
-{
-  display:none;
-}
-#LastHeader
-{
-  display:none;
-}
-#GithubButton
-{
-  width:110px;
-  height:110px;
-  display:none;
-}
-#LinkedinButton
-{
-  width:110px;
-  height:110px;
-  padding-left:20px;
-  padding-right:20px;
-  display: none;
-}
-#ResumeButton
-{
-  width:110px;
-  height:110px;
-  display:none;
-}
-#TextContainer
-{
-  padding-left:40px;
-  padding-right:40px;
-  padding-top:120px;
-}
-#Portrait
-{
-  width:180px;
-  height:180px;
-  border-radius:140px;
-  display:none;
 }
