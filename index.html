@@ -51,31 +51,12 @@
        For those of you that do not know who I am, my name is Brandon Ruggles, and I am a third-year computer science major at NJIT. I will be using this page as a virtual portfolio for my most significant programming projects and contributions. Please be aware that This is NOT a complete listing of every programming project I have worked on, but rather a showcase of the projects that I believe are the most significant. This web page excludes any programming assignments that I completed while at NJIT. You can browse through my posted projects or contact me using the links above. You can also view my resume by clicking the button below (this requires a PDF plugin for your browser). I put this web page together myself using  Bootstrap, HTML5, Javascript, and CSS.
       </p>
       <p style="text-align:center">
-      <button class='btn btn-info' type='submit' id='resumeButton'>View My Resume <span class='glyphicon glyphicon-arrow-right'></span></button>
+      <form action="https://www.dropbox.com/s/716sb4pbe3taxzd/Resume.pdf?dl=0">
+      <button class='btn btn-info' type="submit">Download My Resume <span class='glyphicon glyphicon-download'></span></button>
+      </form>
       <br>
       <br>
-      <embed hidden src="https://db.tt/FjOl3uwB" id="resume" width="600" height="500" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
     </p>
-      <script type="text/javascript">
-        var resumeButton = document.getElementById("resumeButton");
-        resumeButton.addEventListener("click",function()
-        {
-          toggleResume();
-        });
-        function toggleResume()
-        {
-          if(document.getElementById("resumeButton").innerHTML == "View My Resume <span class=\"glyphicon glyphicon-arrow-right\"></span>")
-          {
-              document.getElementById("resumeButton").innerHTML = "View My Resume <span class='glyphicon glyphicon-arrow-down'></span>";
-              document.getElementById("resume").outerHTML = "<embed src='https://www.dropbox.com/s/716sb4pbe3taxzd/Resume.pdf?dl=0' id='resume' width='600' height='500' alt='pdf' pluginspage='http://www.adobe.com/products/acrobat/readstep2.html'>"
-          }
-          else
-          {
-              document.getElementById("resumeButton").innerHTML = "View My Resume <span class='glyphicon glyphicon-arrow-right'></span>";
-              document.getElementById("resume").outerHTML = "<embed hidden src='https://www.dropbox.com/s/716sb4pbe3taxzd/Resume.pdf?dl=0' id='resume' width='600' height='500' alt='pdf' pluginspage='http://www.adobe.com/products/acrobat/readstep2.html'>"
-          }
-        }
-      </script>
       </div>
      </div>
      <div class="tab-pane fade in" id="Java" style="text-align:center;margin-bottom:160px">
