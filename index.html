@@ -1,200 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
- <head>
+<html lang="en-US">
+
+<head>
   <title>Brandon T. Ruggles</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/mystyle.css">
-  <script src="js/detailscript.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-  <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
- </head>
- <body style="background-image:url('img/sky_image.jpg');">
-  <header>
-   <div style="color:#FFFFFF;background-image:url('img/galaxy_image.jpg');" class="jumbotron">
-    <h1>
-     Brandon T. Ruggles
-     </h1>
-     <img src="img/portrait.jpg" alt="img/portrait.jpg" width = "200" height = "200" draggable = "false" class="img-circle">
-     <h3 style="margin-bottom:40px">
-      An online portfolio of my programming projects
-     </h3>
-     <a href="http://www.linkedin.com/in/brandonrninefive">
-       <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x33.png" width="160" height="33" style="border-style:none;margin-bottom:20px" alt="View Brandon Ruggles's profile on LinkedIn">
-     </a>
-     <a class="github-button" href="https://github.com/brandonrninefive" data-style="mega" data-count-href="/brandonrninefive/followers" data-count-api="/users/brandonrninefive#followers">Follow @brandonrninefive</a>
-
-    </div>
-   </header>
-   <ul class="nav nav-tabs">
-    <li class="nav active"><a href="#Home" style="color:#000000" data-toggle="tab">Home</a></li>
-     <li class="nav"><a href="#Java" style="color:#000000" data-toggle="tab">Java Projects</a></li>
-     <li class="nav"><a href="#Android" style="color:#000000" data-toggle="tab">Android Projects</a></li>
-	 <li class="nav"><a href="#iOS" style="color:#000000" data-toggle="tab">iOS Projects</a></li>
-     <li class="nav"><a href="#Python" style="color:#000000" data-toggle="tab">Python Projects</a></li>
-     <li class="nav"><a href="#CSharp" style="color:#000000" data-toggle="tab">C# Projects</a></li>
-     <li class="nav"><a href="#CPlusPlus" style="color:#000000" data-toggle="tab">C++ Projects</a></li>
-     <li class="nav"><a href="#Flash" style="color:#000000" data-toggle="tab">Flash Projects</a></li>
-     <li class="nav"><a href="#Web" style="color:#000000" data-toggle="tab">Web Projects</a></li>
-     <li class="nav"><a href="#Contact" style="color:#000000" data-toggle="tab">Contact Me</a></li>
-    </ul>
-    <div class="tab-content">
-     <div class="tab-pane fade in active" id="Home">
-      <h2 style="text-align:center;margin-top:40px">
-        Welcome to my web page!
-      </h2>
-      <div class="container">
-      <p style="text-indent: 5em; line-height: 2em;margin-top:20px;margin-bottom:30px">
-       For those of you that do not know who I am, my name is Brandon Ruggles, and I am a third-year computer science major at NJIT. I will be using this page as a virtual portfolio for my most significant programming projects and contributions. Please be aware that This is NOT a complete listing of every programming project I have worked on, but rather a showcase of the projects that I believe are the most significant. This web page excludes any programming assignments that I completed while at NJIT. You can browse through my posted projects or contact me using the links above. You can also view my resume by clicking the button below (this requires a PDF plugin for your browser). I put this web page together myself using  Bootstrap, HTML5, Javascript, and CSS.
-      </p>
-      <p style="text-align:center">
-      <button class='btn btn-info' type='submit' id='resumeButton'>View My Resume <span class='glyphicon glyphicon-arrow-right'></span></button>
-      <br>
-      <br>
-      <embed hidden src="https://db.tt/FjOl3uwB" id="resume" width="600" height="500" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
-    </p>
-      <script type="text/javascript">
-        var resumeButton = document.getElementById("resumeButton");
-        resumeButton.addEventListener("click",function()
-        {
-          toggleResume();
-        });
-        function toggleResume()
-        {
-          if(document.getElementById("resumeButton").innerHTML == "View My Resume <span class=\"glyphicon glyphicon-arrow-right\"></span>")
-          {
-              document.getElementById("resumeButton").innerHTML = "View My Resume <span class='glyphicon glyphicon-arrow-down'></span>";
-              document.getElementById("resume").outerHTML = "<embed src='https://db.tt/FjOl3uwB' id='resume' width='600' height='500' alt='pdf' pluginspage='http://www.adobe.com/products/acrobat/readstep2.html'>"
-          }
-          else
-          {
-              document.getElementById("resumeButton").innerHTML = "View My Resume <span class='glyphicon glyphicon-arrow-right'></span>";
-              document.getElementById("resume").outerHTML = "<embed hidden src='https://db.tt/FjOl3uwB' id='resume' width='600' height='500' alt='pdf' pluginspage='http://www.adobe.com/products/acrobat/readstep2.html'>"
-          }
-        }
-      </script>
-      </div>
-     </div>
-     <div class="tab-pane fade in" id="Java" style="text-align:center;margin-bottom:160px">
-      <h2 style="margin-top:40px">
-       My Java Projects
-      </h2>
-      <script type = "text/javascript">
-       createProjectSection("Kinetic","Download .Jar","View Source","glyphicon glyphicon-download","glyphicon glyphicon-eye-open","https://db.tt/EMWd2qLO","https://github.com/brandonrninefive/Kinetic-Old-","Kinetic is a game demo I created in 2013 as my final project for my Honors Computer Science class in highschool. The entire game engine was written from scratch by me. Kinetic is a 2D physics-based puzzle platformer with a built-in level editor. The final level is nearly impossible to beat due to a bug I never went back to fix. I plan to recreate this game in the future using C++. In the game, the WASD keys are used to move, and the spacebar is used to interact with levers. To use your telekinetic powers in-game, hold shift and use the WASD keys to move the crosshair over a moveable (brown) block. After doing so, holding space will grip the object, and releasing space will let the object go.",true,true);
-       createProjectSection("What Even Is?","Download .Jar","View Source","glyphicon glyphicon-download","glyphicon glyphicon-eye-open","https://db.tt/Ymgk9q5v","","What Even Is? is a small game I created in 2012 as a project for my AP Computer Science class in highschool. The entire game engine was written from scratch by me. What Even Is? is a 2D party game where random challenges are presented to the player, and the player must complete as many challenges as possible before losing. Unfortunately, I no longer have the source code to this project. The game uses the WASD keys as movement controls, the spacebar for jumping, and the mouse for one of the minigames.",true,false);
-       createProjectSection("Ward","Download .Jar","View Source","glyphicon glyphicon-download","glyphicon glyphicon-eye-open","https://db.tt/c5Twy0zp","https://github.com/brandonrninefive/Ward-Old-","Ward is a game demo I created in 2012 as a project for my AP Computer Science class in highschool. The entire game engine was written from scratch by me. Ward is a top-down 2D adventure game with randomly generated levels. There are a few bugs left in the game since it was never completely finished. I plan to recreate this game in the future using C++. The game uses the WASD keys to move, the I key for inventory, the K key for interacting, the J key for attacking, and the L key for cycling through the player's hotbar.",true,true);
-       createProjectSection("Ruggles Chat","Download .Rar","View Source","glyphicon glyphicon-download","glyphicon glyphicon-eye-open","https://db.tt/UQYvndnm","https://github.com/brandonrninefive/RugglesChat","Ruggles Chat is a simple chat system I created. The .Rar file contains two .Jar files, one being the server and the other being the client. The server must be ran before any clients can connect to it, however, once the server is up and running, multiple clients can connect to it sumultaneously.",true,true)
-      </script>
-     </div>
-     <div class="tab-pane fade in" id="Android" style="text-align:center;margin-bottom:160px">
-      <h2 style="margin-top:40px">
-       My Android Projects
-      </h2>
-      <script type = "text/javascript">
-       createProjectSection("Challonge Mobile (In-Progress)","Download .Apk","View Source","glyphicon glyphicon-download","glyphicon glyphicon-eye-open","ChallongeMobile.apk","https://github.com/brandonrninefive/ChallongeMobile","Challonge Mobile is a project I first started working on during HackNJIT with the help of two friends. After winning 'best app design' at the hackathon, we decided to continue work on the project. Challonge Mobile is planned to be a fully fleshed out mobile version of the popular tournament bracket website Challonge.com. This program uses HTTP requests to access Challonge's online API through the use of a user's username and API key. More information about the project can be found on its Github page, which you can visit by clicking the 'view source' button above.",false,true);
-      </script>
-	  <script type = "text/javascript">
-       createProjectSection("Repeat After Me (In-Progress)","Download .Apk","View Source","glyphicon glyphicon-download","glyphicon glyphicon-eye-open","","https://github.com/brandonrninefive/RepeatAfterMe","Repeat After Me is a game based on Simon Says. Players have to repeat a series of button presses presented to them on screen. Whoever repeats the pattern correctly first wins the round.",false,true);
-      </script>
-     </div>
-	 <div class="tab-pane fade in" id="iOS" style="text-align:center;margin-bottom:160px">
-      <h2 style="margin-top:40px">
-       My iOS Projects
-      </h2>
-      <script type = "text/javascript">
-       createProjectSection("Challonge Mobile iOS (In-Progress)","Download .Ipa","View Source","glyphicon glyphicon-download","glyphicon glyphicon-eye-open","","https://github.com/brandonrninefive/ChallongeMobileiOS","An iOS port of the Challonge Mobile Android app that I'm working on. Check out the original app under my \"Android Projects\" tab for more details.",false,true);
-      </script>
-     </div>
-     <div class="tab-pane fade in" id="Python" style="text-align:center;margin-bottom:160px">
-      <h2 style="margin-top:40px">
-       My Python Projects
-      </h2>
-      <script type = "text/javascript">
-       createProjectSection("Imgur API Tool","Download .Rar","View Source","glyphicon glyphicon-download","glyphicon glyphicon-eye-open","https://db.tt/G50MNnRn","https://github.com/brandonrninefive/ImgurFrame","This is a GUI application I made in Python using the Tkinter module. It allows the user to type in an Imgur username, and then displays data from that Imgur account through the use of an HTTP GET call to Imgur's REST API.",true,true);
-      </script>
-     </div>
-     <div class="tab-pane fade in" id="CSharp" style="text-align:center;margin-bottom:160px">
-      <h2 style="margin-top:40px">
-       My C# Projects
-      </h2>
-      <script type = "text/javascript">
-       createProjectSection("Pong","Download .Exe","View Source","glyphicon glyphicon-download","glyphicon glyphicon-eye-open","https://db.tt/PbFhHPoL","https://github.com/brandonrninefive/Pong-Old-","This is a recreation of the classic game 'Pong' that I wrote recently to test out graphics in C#. Player 1's controls are the W and S keys, and player 2's controls are the up and down arrow keys.",true,true);
-      </script>
-     </div>
-     <div class="tab-pane fade in" id="CPlusPlus" style="text-align:center;margin-bottom:160px">
-      <h2 style="margin-top:40px">
-       My C++ Projects
-      </h2>
-      <script type = "text/javascript">
-       createProjectSection("GanonBeep","Download .Rar","View Source","glyphicon glyphicon-download","glyphicon glyphicon-eye-open","https://db.tt/jYiShRxk","https://github.com/brandonrninefive/GanonBeep","GanonBeep is a livestream helper tool made specifically for games that support up to 4 players. The program writes data into text files which can then be read by livestreaming software to change text in real time on a livestream. Most of the code was written by me, however, a friend helped program in support for Macs.",true,true);
-      </script>
-     </div>
-     <div class="tab-pane fade in" id="Flash" style="text-align:center;margin-bottom:160px">
-      <h2 style="margin-top:40px">
-       My Flash Projects
-      </h2>
-      <script type = "text/javascript">
-       createProjectSection("Canvas Battle","Play on Kongregate","View Source","glyphicon glyphicon-screenshot","glyphicon glyphicon-eye-open","http://www.kongregate.com/games/matrigonygames/canvas-battle","https://github.com/brandonrninefive/CanvasBattle","Canvas Battle is the first ever fully-developed game that I created. Originally written in AS2, and later rewritten in AS3, Canvas Battle took 4 years to develop, and in that time taught me many things about Flash, as well as publishing games on the internet. The game was fully programmed by me, while most of the audio and art assets were created by my friends. Canvas Battle was released in 2014, and despite its mediocre reviews, I'm proud of the final product. The game's controls are listed under the 'instructions' section of its Kongregate page.",true,true);
-       createProjectSection("A Letter for Mom","Play in Web Page","View Source","glyphicon glyphicon-file","glyphicon glyphicon-eye-open","https://db.tt/BvP40UhW","https://github.com/brandonrninefive/ALetterForMom","A Letter for Mom was a short game I created for Mother's Day with the help of some of my friends. I programmed the entire game using Flash AS3, while my friends created the art and audio assets. You can use the W and D keys to move left and right, and use the spacebar to jump.",true,true);
-      </script>
-     </div>
-     <div class="tab-pane fade in" id="Web" style="text-align:center;margin-bottom:160px">
-      <h2 style="margin-top:40px">
-       My Web Projects
-      </h2>
-      <script type = "text/javascript">
-      createProjectSection("Personal Web Page","View Web Page","View Source","glyphicon glyphicon-file","glyphicon glyphicon-eye-open","","https://github.com/brandonrninefive/brandonrninefive.github.io","You're looking at it! You can check out the source code to this web page by clicking the \"view source\" button above!",false,true);
-       createProjectSection("Bob The Squirrel (On Pause)", "View Web Page", "View Source", "glyphicon glyphicon-file","glyphicon glyphicon-eye-open", "https://db.tt/og70q9b8", "https://github.com/brandonrninefive/BobTheSquirrel", "Bob The Squirrel is a browser-based multiplayer game I have planned that will allow players to connect to game servers hosted by other players. The servers can be hosted by downloading a NodeJS server client, and players can connect to these servers through the use of websockets.", true, true);
-       createProjectSection("HTML5 Canvas Test (Seizure Warning)","View Web Page","View Source","glyphicon glyphicon-file","glyphicon glyphicon-eye-open","https://db.tt/n2hw4blR","https://github.com/brandonrninefive/HTML5CanvasTest","This is a simple web page I created in HTML5 to test out the canvas tag. It features a flashing box that can be moved with the arrow keys and resized with the shift and spacebar keys.",true,true);
-      </script>
-     </div>
-     <div class="tab-pane fade in" id="Contact" style="text-align:center;margin-bottom:160px">
-      <h2 style="margin-top:40px">
-       Contact Me
-      </h2>
-      <h3>
-       <b>
-         <span class="glyphicon glyphicon-earphone"></span> Phone:
-       </b>
-     </h3>
-      <p style="font-size:24px">
-        <b>
-          <a href="tel:+18623360054">
-            862-336-0054
+  <script language="javascript" type="text/javascript" src="https://code.jquery.com/jquery-git2.min.js"></script>
+  <script language="javascript" type="text/javascript" src="scripts/myscript.js"></script>
+</head>
+<body>
+  <div id="ParentContainer" class="container">
+    <div id="TextContainer" class="container">
+      <h1 id="Name">Brandon T. Ruggles</h1>
+      <h3 id="Apps">Apps.</h3>
+      <h3 id="Games">Games.</h3>
+      <h3 id="Websites">Websites.</h3>
+      <h3 id="LastHeader">You name it, I make it.</h3>
+      <span>
+          <a target="_blank" href="http://www.github.com/brandonrninefive" title="Github">
+            <img id="GithubButton" src="img/Github-Mark.png" alt="img/Github-Mark.png">
           </a>
-        </b>
-      </p>
-      <h3>
-       <b>
-         <span class="glyphicon glyphicon-envelope">
-         </span>
-         Email:
-       </b>
-      </h3>
-      <p style="font-size:24px">
-        <b>
-          <a href="mailto:brandonrninefive@gmail.com">
-           brandonrninefive@gmail.com
+          <a target="_blank" href="https://www.linkedin.com/in/brandonrninefive" title="Linkedin">
+            <img id="LinkedinButton" src="img/Linkedin-Mark.png" alt="img/Github-Mark.png">
           </a>
-        </b>
-      </p>
-      <h3>
-       <b>
-         <span class="glyphicon glyphicon-user"></span> Google Hangouts / Skype:
-       </b>
-      </h3>
-      <p style="font-size:24px;padding-bottom:24px">
-        <b>
-           Please contact me by phone or Email to arrange a meeting.
-        </b>
-      </p>
-     </div>
+          <a target="_blank" href="http://bit.ly/1TiwhzR" title="Resume">
+            <img id="ResumeButton" src="img/Paper-Mark.png" alt="img/Paper-Mark.png">
+          </a>
+       <span>
     </div>
-    <footer>
-      © 2015 Brandon Ruggles
-    </footer>
-  </body>
+  </div>
+</body>
 </html>
