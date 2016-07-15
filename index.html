@@ -4,41 +4,66 @@
   <title>Brandon T. Ruggles</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
   <link rel="stylesheet" href="css/mystyle.css">
-  <script src="js/detailscript.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-  <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  </head>
- <body style="background-image:url('img/sky_image.jpg');">
-  <header>
-   <div style="color:#FFFFFF;background-image:url('img/galaxy_image.jpg');" class="jumbotron">
-    <h1>
-     Brandon T. Ruggles
-     </h1>
-     <img src="img/portrait.jpg" alt="img/portrait.jpg" width = "200" height = "200" draggable = "false" class="img-circle">
-     <h3 style="margin-bottom:40px">
-      App Development, Shell Scripting, Web Development, and Much More
-     </h3>
-     <a href="http://www.linkedin.com/in/brandonrninefive" target="_blank">
-       <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x33.png" width="160" height="33" style="border-style:none;margin-bottom:20px" alt="View Brandon Ruggles's profile on LinkedIn">
-     </a>
-     <a class="github-button" href="https://github.com/brandonrninefive" data-style="mega" data-count-href="/brandonrninefive/followers" data-count-api="/users/brandonrninefive#followers">Follow @brandonrninefive</a>
-
+ <body class="blue darken-3">
+   <div id="pageOne">
+     <div id="mainContainer">
+       <noscript><h2>This website uses JavaScript for visual effects. Please enable JavaScript or load this page in another browser with JavaScript enabled.</h2></noscript>
+      <h2 id="nameTitle">Brandon T. Ruggles</h2>
+      <h5 id="alwaysTitle">Always learning in order to make my mark one day.</h5>
+      <p id="thanksTitle">Thanks for visiting! Want to know more about me? Click the links below, or scroll down to read my bio.</p>
+      <div id="buttonDiv">
+        <span>
+        <span id="twitterButton" class="fa-stack fa-4x">
+          <a href="https://twitter.com/RugsTweets" target="_blank">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+          </a>
+        </span>
+        <span id="githubButton" class="fa-stack fa-4x">
+          <a href="https://github.com/brandonrninefive" target="_blank">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
+          </a>
+        </span>
+        <span id="linkedinButton" class="fa-stack fa-4x">
+          <a href="https://www.linkedin.com/in/brandonrninefive" target="_blank">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+          </a>
+        </span>
+        <span id="resumeButton" class="fa-stack fa-4x">
+          <a href="https://www.dropbox.com/s/716sb4pbe3taxzd/Resume.pdf?dl=0" target="_blank">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
+          </a>
+        </span>
+      </span>
+      </div>
     </div>
-   </header>
-   <section>
-     <p style="text-align:center;margin-left:80px;margin-right:80px;padding-top:40px">
-       This website is currently under construction. If you wish to view any of my programming projects, please take a look at my GitHub page (linked above). You can also click the button below to view my resume. Thank you for visiting.
-     </p>
-     <p style="text-align:center;margin-top:40px;margin-bottom:40px;">
-       <button class='btn btn-info' onclick="window.open('https://www.dropbox.com/s/716sb4pbe3taxzd/Resume.pdf?dl=0')">View My Resume <span class='glyphicon glyphicon-link'></span></button>
-     </p>
-   </section>
-    <footer>
-      © 2016 Brandon Ruggles
-    </footer>
+  </div>
+  <div id="pageTwo">
+    <div id="mainContainer2">
+      <div id="imgDiv">
+        <img id="bioImage" src="img/portrait.jpg" alt="Portrait">
+      </div>
+      <div id="bioCard" class="card-panel light-blue darken-1">
+        <span id="bioCardTitle" class="card-title">About Me</span>
+        <p id="bioText" class="white-text">
+          Hello! My name is Brandon Ruggles, and I'm a senior computer science major at NJIT. When I was younger, I was always amazed by computers and the fact that they could generate entire worlds in the blink of an eye. Over time, that amazement grew into curiousity, and I decided to delve into the world of programming. During my freshman year of high school, I took my first programming class (a simple Visual Basic and C# course), and I ended up liking it so much that I decided programming was what I wanted to do for the rest of my life. Today, I've worked on multiple programming projects on my own, as well as with others, in a variety of languages and on a variety of different platforms. Being curious by nature, I've involved myself in various aspects of programming including app development, web development, scripting on Linux/Unix, and game development. As of late, I've taken an increased interest in lower-level graphics programming and artificial intelligence. My dream is to one day use my programming abilities to change the world for the better, whether it be through a creation of my own, or through my contribution to a project created at a software company. If you wish to learn more about me or my accomplishments, please click the link to my resume above (the rightmost button shaped like a PDF file).
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer blue darken-4">
+    <div id="copyright" class="footer-copyright">
+    © 2016 - 2017 Brandon Ruggles
+    </div>
+  </footer>
+  <script src="js/mainScript.js"></script>
   </body>
 </html>

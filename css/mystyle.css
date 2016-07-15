@@ -1,29 +1,116 @@
-.jumbotron
-{
-  text-align:center;
-  -moz-user-select: -moz-none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor:default;
-  background:no-repeat;
-  background-size: cover;
-}
-body
-{
-  background-repeat:no-repeat;
-  background-size:cover
-}
-footer
-{
-  -moz-user-select: -moz-none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-align: center;
-  background-color:#282828;
-  color:#FFFFFF;
-  cursor:default;
-}
+body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+ }
+
+ main {
+   flex: 1 0 auto;
+ }
+
+ footer
+ {
+    min-width: 460px;
+ }
+
+ noscript
+ {
+   color:red;
+ }
+
+ img
+ {
+    border-radius: 10%;
+ }
+
+ a
+ {
+  color:inherit;
+  text-decoration: none;
+ }
+
+ #pageOne
+ {
+   min-height: 100vh;
+ }
+
+ #mainContainer
+ {
+   padding-top:30vh;
+   text-align:center;
+    min-width: 460px;
+ }
+
+ #nameTitle
+ {
+   display:none;
+ }
+
+ #alwaysTitle
+ {
+   display:none;
+ }
+
+ #thanksTitle
+ {
+   display:none;
+ }
+
+ #buttonDiv
+ {
+   display:none;
+   margin-left:auto;
+   margin-right:auto;
+ }
+
+ #twitterButton
+ {
+   color:#039be5;
+   opacity:0;
+ }
+
+ #githubButton
+ {
+   color:#039be5;
+   opacity:0;
+ }
+
+ #linkedinButton
+ {
+   color:#039be5;
+   opacity:0;
+ }
+
+ #resumeButton
+ {
+   color:#039be5;
+   opacity:0;
+ }
+
+ #pageTwo
+ {
+   min-height:100vh;
+ }
+
+ #mainContainer2
+ {
+   min-width:460px;
+   display:none;
+ }
+
+ #imgDiv
+ {
+   text-align: center;
+ }
+
+ #bioCard
+ {
+   margin-left:auto;
+   margin-right:auto;
+   max-width:800px;
+ }
+
+ #copyright
+ {
+   text-align:center;
+ }
