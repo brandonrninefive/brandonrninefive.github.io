@@ -65,25 +65,25 @@ body {
 
  #twitterButton
  {
-   color:#039be5;
+   color:#26a69a;
    opacity:0;
  }
 
  #githubButton
  {
-   color:#039be5;
+   color:#26a69a;
    opacity:0;
  }
 
  #linkedinButton
  {
-   color:#039be5;
+   color:#26a69a;
    opacity:0;
  }
 
  #resumeButton
  {
-   color:#039be5;
+   color:#26a69a;
    opacity:0;
  }
 
@@ -95,6 +95,8 @@ body {
  #mainContainer2
  {
    min-width:460px;
+   padding-left:20px;
+   padding-right:20px;
    display:none;
  }
 
@@ -105,9 +107,16 @@ body {
 
  #bioCard
  {
+   border-radius:4%;
    margin-left:auto;
    margin-right:auto;
    max-width:800px;
+ }
+
+ #bioCardTitle
+ {
+   color:white;
+   font-size:24px;
  }
 
  #copyright

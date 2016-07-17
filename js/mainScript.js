@@ -32,40 +32,40 @@ $(document).ready(function()
 
 $("#twitterButton").hover(function()
 {
-  $("#twitterButton").css("color","#4fc3f7");
+  $("#twitterButton").css("color","#80cbc4");
 });
 
 $("#twitterButton").mouseleave(function()
 {
-  $("#twitterButton").css("color","#039be5");
+  $("#twitterButton").css("color","#26a69a");
 });
 
 $("#githubButton").hover(function()
 {
-  $("#githubButton").css("color","#4fc3f7");
+  $("#githubButton").css("color","#80cbc4");
 });
 
 $("#githubButton").mouseleave(function()
 {
-  $("#githubButton").css("color","#039be5");
+  $("#githubButton").css("color","#26a69a");
 });
 
 $("#linkedinButton").hover(function()
 {
-  $("#linkedinButton").css("color","#4fc3f7");
+  $("#linkedinButton").css("color","#80cbc4");
 });
 
 $("#linkedinButton").mouseleave(function()
 {
-  $("#linkedinButton").css("color","#039be5");
+  $("#linkedinButton").css("color","#26a69a");
 });
 
 $("#resumeButton").hover(function()
 {
-  $("#resumeButton").css("color","#4fc3f7");
+  $("#resumeButton").css("color","#80cbc4");
 });
 
 $("#resumeButton").mouseleave(function()
 {
-  $("#resumeButton").css("color","#039be5");
+  $("#resumeButton").css("color","#26a69a");
 });
