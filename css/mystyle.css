@@ -62,90 +62,90 @@ body {
    text-decoration: none;
  }
 
-@media (min-width: 501px)
+@media (min-width: 520px)
 {
-   #twtterButton
+   #tButton
    {
      color:#26a69a;
      opacity:0;
      font-size:4em;
    }
 
-   #githubButton
+   #gButton
    {
      color:#26a69a;
      opacity:0;
      font-size:4em;
    }
 
-   #lnkdnButton
+   #lButton
    {
      color:#26a69a;
      opacity:0;
      font-size:4em;
    }
 
-   #resumeButton
+   #rButton
    {
      color:#26a69a;
      opacity:0;
      font-size:4em;
    }
  }
- @media (min-width:400px) and (max-width:500px)
+ @media (min-width:420px) and (max-width:520px)
  {
-   #twtterButton
+   #tButton
    {
      color:#26a69a;
      opacity:0;
      font-size:3em;
    }
 
-   #githubButton
+   #gButton
    {
      color:#26a69a;
      opacity:0;
      font-size:3em;
    }
 
-   #lnkdnButton
+   #lButton
    {
      color:#26a69a;
      opacity:0;
      font-size:3em;
    }
 
-   #resumeButton
+   #rButton
    {
      color:#26a69a;
      opacity:0;
      font-size:3em;
    }
  }
- @media (max-width:399px)
+ @media (max-width:419px)
  {
-   #twtterButton
+   #tButton
    {
      color:#26a69a;
      opacity:0;
      font-size:2.4em;
    }
 
-   #githubButton
+   #gButton
    {
      color:#26a69a;
      opacity:0;
      font-size:2.4em;
    }
 
-   #lnkdnButton
+   #lButton
    {
      color:#26a69a;
      opacity:0;
      font-size:2.4em;
    }
 
-   #resumeButton
+   #rButton
    {
      color:#26a69a;
      opacity:0;
@@ -153,22 +153,22 @@ body {
    }
  }
 
- #twtterButton:hover
+ #tButton:hover
  {
    color:#80cbc4;
  }
 
- #githubButton:hover
+ #gButton:hover
  {
    color:#80cbc4
  }
 
- #lnkdnButton:hover
+ #lButton:hover
  {
    color:#80cbc4
  }
 
- #resumeButton:hover
+ #rButton:hover
  {
    color:#80cbc4;
  }

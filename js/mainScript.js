@@ -7,13 +7,13 @@ function beginP1FadeIn()
       $("#thanksTitle").fadeIn(1200, function()
       {
         $("#buttonDiv").css("display","block");
-        $("#twtterButton").fadeTo(400, 1, function()
+        $("#tButton").fadeTo(400, 1, function()
         {
-          $("#githubButton").fadeTo(400, 1, function()
+          $("#gButton").fadeTo(400, 1, function()
           {
-            $("#lnkdnButton").fadeTo(400, 1, function()
+            $("#lButton").fadeTo(400, 1, function()
             {
-              $("#resumeButton").fadeTo(400, 1, function()
+              $("#rButton").fadeTo(400, 1, function()
               {
                 $("#emailP").fadeIn(400, function()
                 {
@@ -27,8 +27,3 @@ function beginP1FadeIn()
     });
   });
 }
-
-$(document).ready(function()
-{
-  beginP1FadeIn();
-});
