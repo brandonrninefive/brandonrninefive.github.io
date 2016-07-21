@@ -4,8 +4,11 @@
   <title>Brandon T. Ruggles</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body{display:flex;flex-direction:column;min-height:100vh;background-color:#c8e6c9}main{flex:1 0 auto}#mainContainer{padding-top:30vh}#alwaysTitle,#buttonDiv,#emailP,#mainContainer2,#nameTitle,#thanksTitle{display:none}#gButton,#lButton,#rButton,#tButton{opacity:0}
+  </style>
  </head>
- <body style="background-color:#c8e6c9">
+ <body>
    <div id="pageOne">
      <div id="mainContainer">
        <noscript><h2>This website uses JavaScript for visual effects. Please enable JavaScript or load this page in another browser with JavaScript enabled.</h2></noscript>
@@ -61,6 +64,8 @@
     © 2016 - 2017 Brandon Ruggles
     </div>
   </footer>
-  <script src="js/defer.min.js"></script>
+  <script>
+  function loadCSSFile(e,n){var i=document.createElement("link");i.rel="stylesheet",i.href="css/"+e,i.addEventListener("load",n),document.body.appendChild(i)}function loadJavaScriptFile(e,n){var i=document.createElement("script");i.type="text/javascript",i.src="js/"+e,i.addEventListener("load",n),document.body.appendChild(i)}function loadCSS(){loadCSSFile("font-awesome.min.css",function(){loadCSSFile("materialize.min.css",function(){loadCSSFile("mystyle.min.css",function(){loadJavaScript()})})})}function loadJavaScript(){loadJavaScriptFile("jquery-3.1.0.min.js",function(){loadJavaScriptFile("mainScript.min.js",function(){beginP1FadeIn()})})}window.addEventListener("load",function(){loadCSS()});
+  </script>
   </body>
 </html>
