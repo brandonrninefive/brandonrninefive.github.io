@@ -22,10 +22,7 @@ function loadCSS()
   {
     loadCSSFile("materialize.min.css", function()
     {
-        loadCSSFile("mystyle.min.css", function()
-        {
           loadJavaScript();
-        });
     });
   });
 }
