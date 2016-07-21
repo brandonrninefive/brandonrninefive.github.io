@@ -1,6 +1,5 @@
 body {
    display: flex;
-   min-height: 100vh;
    flex-direction: column;
  }
 
@@ -28,6 +27,7 @@ body {
 
  #mainContainer
  {
+   min-height: 100vh;
    padding-top:30vh;
    text-align:center;
    padding-left:20px;
