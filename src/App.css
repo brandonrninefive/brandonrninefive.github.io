@@ -1,0 +1,111 @@
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	background-color: #d9e8f7;
+	margin-bottom: 60px;
+}
+
+.App {
+  margin-top:150px;
+  text-align: center;
+}
+
+.unselectedButton {
+	font-weight: normal;
+	margin-left:5px;
+	margin-right:5px;
+	margin-bottom:10px;
+	cursor: pointer;
+}
+
+.selectedButton {
+	font-weight: bold;
+	margin-left:5px;
+	margin-right:5px;
+	margin-bottom:10px;
+	cursor: pointer;
+}
+
+.linkIcon {
+	padding-left: 5px;
+}
+
+.repoIcon {
+	padding-right: 5px;
+}
+
+.socialMediaDiv {
+	text-align:center;
+}
+
+.socialMediaButton {
+	font-size: 120px;
+	padding-left:25px;
+	padding-right:25px;
+}
+
+.portraitImage {
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:50%;
+}
+
+.navigator {
+	margin-top:20px;
+}
+
+.navigatorGroup-appear {
+  opacity: 0.01;
+}
+
+.navigatorGroup-appear.navigatorGroup-appear-active {
+  opacity: 1;
+  transition: opacity 3s ease-in;
+}
+
+.navigatorGroup-enter {
+	opacity: 0.01;
+}
+
+.navigatorGroup-enter.navigatorGroup-enter-active {
+	opacity: 1;
+	transition: opacity 3s ease-in;
+}
+
+.navigatorGroup-leave {
+	opacity: 1;
+}
+
+.navigatorGroup-leave.navigatorGroup-leave-active {
+	opacity: 0.01;
+	transition: opacity 3s ease-in;
+}
+
+.navigatorPage {
+	max-width:800px;
+	margin-top:20px;
+	margin-bottom:50px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+thead {
+	font-weight: bold;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background-color: #f5f5f5;
+	text-align:center;
+}
