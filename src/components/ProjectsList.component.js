@@ -100,13 +100,13 @@ class ProjectsList extends Component {
 					<td>
 						<a href={project["html_url"]} target="_blank" rel="noopener noreferrer">{project["name"]}</a>
 					</td>
-					<td>
+					<td className="repoStats">
 						<div><FontAwesome name="eye" className="repoIcon"/>{project["watchers_count"]}</div>
 					</td>
-					<td>
+					<td className="repoStats">
 						<div><FontAwesome name="star" className="repoIcon"/>{project["stargazers_count"]}</div>
 					</td>
-					<td>
+					<td className="repoStats">
 						<div><FontAwesome name="code-fork" className="repoIcon"/>{project["forks_count"]}</div>
 					</td>
 				</tr>);

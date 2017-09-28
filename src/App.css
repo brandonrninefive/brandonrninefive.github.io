@@ -1,31 +1,35 @@
-html {
-	position: relative;
-	min-height: 100%;
-}
-
 body {
 	background-color: #d9e8f7;
-	margin-bottom: 60px;
+	height: 100%;
+	font-size: 1.2vw;
+}
+
+h1 {
+	font-size: 4vw;
+}
+
+h2 {
+	font-size: 3vw;
 }
 
 .App {
-  margin-top:150px;
-  text-align: center;
+	margin-top: 100px;
+	text-align: center;
 }
 
 .unselectedButton {
 	font-weight: normal;
-	margin-left:5px;
-	margin-right:5px;
-	margin-bottom:10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 10px;
 	cursor: pointer;
 }
 
 .selectedButton {
 	font-weight: bold;
-	margin-left:5px;
-	margin-right:5px;
-	margin-bottom:10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 10px;
 	cursor: pointer;
 }
 
@@ -43,19 +47,21 @@ body {
 
 .socialMediaButton {
 	font-size: 120px;
-	padding-left:25px;
-	padding-right:25px;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 .portraitImage {
 	display: block;
-	margin-left:auto;
-	margin-right:auto;
-	border-radius:50%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	width: 15vw;
+	height: 15vw;
 }
 
 .navigator {
-	margin-top:20px;
+	margin-top: 20px;
 }
 
 .navigatorGroup-appear {
@@ -86,26 +92,55 @@ body {
 }
 
 .navigatorPage {
-	max-width:800px;
-	margin-top:20px;
-	margin-bottom:50px;
-	margin-left:auto;
+	max-width: 70%;
+	min-height: 600px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	margin-left: auto;
 	margin-right:auto;
-	text-align:left;
-	padding-left:10px;
-	padding-right:10px;
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 thead {
 	font-weight: bold;
 }
 
-.footer {
-	position: absolute;
-	bottom: 0;
+footer {
 	width: 100%;
-	height: 60px;
-	line-height: 60px;
-	background-color: #f5f5f5;
+	background: #d5d5d5;
+}
+
+.footer-container {
+	padding-top: 20px;
+	padding-bottom: 20px;
 	text-align:center;
+}
+
+@media (max-width: 1200px) {
+
+	body {
+		font-size: 14px;	
+	}
+
+	h1 {
+		font-size: 32px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	.portraitImage {
+		width: 175px;
+		height: 175px;
+	}
+}
+
+@media (max-width: 500px) {
+
+	.repoStats {
+		display: none;
+	}
 }
