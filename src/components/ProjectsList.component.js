@@ -27,15 +27,16 @@ class ProjectsList extends Component {
 		
 		$.get({
 			url: "https://api.github.com/repos/brandonrninefive/" + projectName,
+			type: "GET",
 			data: {},
 			success: function(data) {
 				var projects = this.state.projects;
 				projects.push(data);
 				projects.sort(function(a, b) {
-					if(a["watchers_count"] < b["watchers_count"]) {
+					if(a["subscribers_count"] < b["subscribers_count"]) {
 						return 1;
 					}
-					else if(a["watchers_count"] > b["watchers_count"]) {
+					else if(a["subscribers_count"] > b["subscribers_count"]) {
 						return -1;
 					}
 					if(a["stargazers_count"] < b["stargazers_count"]) {
@@ -60,6 +61,16 @@ class ProjectsList extends Component {
 				});
 				this.setState({projects: projects});
 			}.bind(this),
+			error: function(data) {
+				var projects = [];
+				if(data.status === 403) {
+					projects.push("403 error");
+				}
+				else {
+					projects.push("error");
+				}
+				this.setState({projects: projects});
+			}.bind(this),
 			dataType: "json"
 		});	
 	}
@@ -73,13 +84,24 @@ class ProjectsList extends Component {
 
 	getContribution(contributionObj) {
 	
-		$.get({
+		$.ajax({
 			url: "https://api.github.com/repos/" + contributionObj["repo_owner"]  + "/" + contributionObj["repo"] + "/pulls/" + contributionObj["request_number"],
+			type: "GET",
 			data: {},
 			success: function(data) {
 				var contributions = this.state.contributions;
 				contributions.push(data);
 				contributions.sort();
+				this.setState({contributions: contributions});
+			}.bind(this),
+			error: function(data) {
+				var contributions = [];
+				if(data.status === 403) {
+					contributions.push("403 error");
+				}
+				else {
+					contributions.push("error");
+				}
 				this.setState({contributions: contributions});
 			}.bind(this),
 			dataType: "json"
@@ -96,12 +118,26 @@ class ProjectsList extends Component {
 	render() {
 
 		var projects = this.state.projects.map(function(project, index) {
+			if(project === "403 error") {
+				return (<tr className="errorEntry" key={index}>
+					<td>
+						Your IP address reached the <a href="https://developer.github.com/v3/rate_limit/" target="_blank" rel="noopener noreferrer">GitHub API rate limit</a>. :(
+					</td>
+				</tr>);
+			}
+			else if(project === "error") {
+				return (<tr className="errorEntry" key={index}>
+						<td>
+							Failed to load the projects due to a connection error.
+						</td>
+					</tr>);
+			}
 			return (<tr key={index}>
 					<td>
 						<a href={project["html_url"]} target="_blank" rel="noopener noreferrer">{project["name"]}</a>
 					</td>
 					<td className="repoStats">
-						<div><FontAwesome name="eye" className="repoIcon"/>{project["watchers_count"]}</div>
+						<div><FontAwesome name="eye" className="repoIcon"/>{project["subscribers_count"]}</div>
 					</td>
 					<td className="repoStats">
 						<div><FontAwesome name="star" className="repoIcon"/>{project["stargazers_count"]}</div>
@@ -117,7 +153,21 @@ class ProjectsList extends Component {
 		}
 
 		
-		var contributions = this.state.contributions.map(function(contribution, index) {	
+		var contributions = this.state.contributions.map(function(contribution, index) {
+			if(contribution === "403 error") {
+				return (<tr className="errorEntry" key={index}>
+					<td>
+						Your IP address reached the <a href="https://developer.github.com/v3/rate_limit/" target="_blank" rel="noopener noreferrer">GitHub API rate limit</a>. :(
+					</td>
+				</tr>);
+			}
+			else if(contribution === "error") {
+				return (<tr className="errorEntry" key={index}>
+						<td>
+							Failed to load the contributions due to a connection error. :(
+						</td>
+					</tr>);
+			}	
 			return (<tr key={index}>
 					<td>
 						<a href={contribution["html_url"]} target="_blank" rel="noopener noreferrer">{contribution["base"]["user"]["login"] + "/" + contribution["base"]["repo"]["name"] + " PR #" + contribution["number"]}</a>

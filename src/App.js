@@ -16,7 +16,7 @@ const aboutMePage = (<Card>
 			<CardBlock>
 				<img className="img-circle portraitImage" src={portrait} alt="Portrait"/>
 			</CardBlock>
-			<CardFooter>Hey there! I'm a software engineer and web developer with a B.S in computer science and a minor in applied mathematics from NJIT. When I was younger, I was always amazed by computers and the fact that they could do so many complex things in the blink of an eye. Over time, that amazement grew into curiousity, and I decided to delve head-first into the world of programming. Today, I'm a systems developer at Prudential Financial, where I've helped develop a variety of web tools for generating reports and monitoring Hadoop clusters. Aside from that, I've also developed various programs and apps, both for work and in my own free time.
+			<CardFooter>Hey there! I'm a software engineer in the NJ/NY area with a B.S in computer science and a minor in applied mathematics from NJIT. When I was younger, I was always amazed by computers and the fact that they could do so many complex things in the blink of an eye. Over time, that amazement grew into curiousity, and I decided to delve head-first into the world of programming during my freshman year of highschool. Today, I'm a systems developer at Prudential Financial, where I've helped develop a variety of web tools and scripts for generating reports and monitoring Hadoop clusters. Aside from that, I've also developed various programs, apps, and games, both for work and for my own enjoyment. One day, I dream of changing the world for the better with my programming abilities and the lessons that I learn throughout my career.
  			</CardFooter>
 		     </Card>);
 
