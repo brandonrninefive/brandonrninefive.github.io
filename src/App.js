@@ -7,6 +7,7 @@ import {Card, CardHeader, CardBlock, CardFooter} from 'reactstrap';
 import FontAwesome from 'react-fontawesome';
 import Navigator from './components/Navigator.component';
 import ProjectsList from './components/ProjectsList.component';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 const pullRequests = [{"repo_owner": "Microsoft", "repo": "vscode", "request_number": "29860"}];
 const projectNames = ["Selenium-Shoe-Bot-NakedCPH", "prIDE", "Selenium-Google-Search-Console-Bot", "TwitchInputBot"];
@@ -45,10 +46,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div>
-          <h1>Brandon T. Ruggles</h1>
-	  <h2>Always learning in order to make my mark one day.</h2>
-        </div>
+	  <ReactCSSTransitionGroup transitionName="headerGroup" transitionAppear={true} transitionAppearTimeout={1000} transitionEnter={false} transitionLeave={false}>
+              <div key={0}>
+                <h1>Brandon T. Ruggles</h1>
+	        <h2>Always learning in order to make my mark one day.</h2>
+              </div>
+	  </ReactCSSTransitionGroup>
 	<Navigator buttonObjects={navigatorObjects}/>
       </div>
     );

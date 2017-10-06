@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import NavigatorButton from './NavigatorButton.component';
 
 class Navigator extends Component {
@@ -41,12 +42,18 @@ class Navigator extends Component {
 		}.bind(this));
 
 		return(<div className="navigator">
-				<div>
-					{buttons}
-		       		</div>
-				<div key="page" className="navigatorPage">
-					{this.state.currentPage}
-				</div>
+				<ReactCSSTransitionGroup transitionName="buttonGroup" transitionEnter={false} transitionLeave={false} transitionAppear={true} transitionAppearTimeout={1000}>
+					<div key={0}>
+						{buttons}
+					</div>
+				</ReactCSSTransitionGroup>
+					
+				<ReactCSSTransitionGroup transitionName="navigatorGroup" transitionAppear={true} transitionAppearTimeout={1000} transitionEnter={false} transitionLeave={false}>
+					<div key="page" className="navigatorPage">
+						{this.state.currentPage}
+					
+					</div>
+				</ReactCSSTransitionGroup>
 			</div>);
 	}
 }
