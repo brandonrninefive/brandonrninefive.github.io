@@ -1,17 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'font-awesome/css/font-awesome.min.css';
 import './App.css';
 import portrait from './img/portrait.jpg';
 import React, {Component} from 'react';
 import {Card, CardHeader, CardBlock, CardFooter} from 'reactstrap';
-import FontAwesome from 'react-fontawesome';
 import Navigator from './components/Navigator.component';
 import ProjectsList from './components/ProjectsList.component';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 const pullRequests = [{"repo_owner": "Microsoft", "repo": "vscode", "request_number": "29860"}];
 const projectNames = ["Selenium-Shoe-Bot-NakedCPH", "prIDE", "Selenium-Google-Search-Console-Bot", "TwitchInputBot"];
-const pdfIcon = (<FontAwesome className="linkIcon" name="file-pdf-o"/>);
+const pdfIcon = (<span className="icon-file-pdf-o linkIcon"></span>);
 const aboutMePage = (<Card>
 			<CardHeader>About Me</CardHeader>
 			<CardBlock>
@@ -31,9 +29,9 @@ const socialMediaPage = (<Card>
 				<CardHeader>Social Media</CardHeader>
 				<CardBlock>
 					<div className="socialMediaDiv">
-						<a className="socialMediaButton" href="https://twitter.com/RugsTweets" target="_blank" rel="noopener noreferrer"><FontAwesome name="twitter"/></a>
-						<a className="socialMediaButton" href="https://github.com/brandonrninefive" target="_blank" rel="noopener noreferrer"><FontAwesome name="github-alt"/></a>
-						<a className="socialMediaButton" href="https://www.linkedin.com/in/brandonrninefive/" target="_blank" rel="noopener noreferrer"><FontAwesome name="linkedin"/></a>
+						<a className="socialMediaButton" href="https://twitter.com/RugsTweets" target="_blank" rel="noopener noreferrer"><i className="icon-twitter"></i></a>
+						<a className="socialMediaButton" href="https://github.com/brandonrninefive" target="_blank" rel="noopener noreferrer"><i className="icon-github-alt"></i></a>
+						<a className="socialMediaButton" href="https://www.linkedin.com/in/brandonrninefive/" target="_blank" rel="noopener noreferrer"><i className="icon-linkedin"></i></a>
 					</div>
 				</CardBlock>
 				<CardFooter>My profiles around the web.</CardFooter>

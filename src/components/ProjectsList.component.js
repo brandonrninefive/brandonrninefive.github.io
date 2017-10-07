@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {Table} from 'reactstrap';
-import FontAwesome from 'react-fontawesome';
 
 class ProjectsList extends Component {
 	constructor(props) {
@@ -128,13 +127,13 @@ class ProjectsList extends Component {
 						<a href={project["html_url"]} target="_blank" rel="noopener noreferrer">{project["name"]}</a>
 					</td>
 					<td className="repoStats">
-						<div><FontAwesome name="eye" className="repoIcon"/>{project["subscribers_count"]}</div>
+						<div><span className="icon-eye repoIcon"></span>{project["subscribers_count"]}</div>
 					</td>
 					<td className="repoStats">
-						<div><FontAwesome name="star" className="repoIcon"/>{project["stargazers_count"]}</div>
+						<div><span className="icon-star repoIcon"></span>{project["stargazers_count"]}</div>
 					</td>
 					<td className="repoStats">
-						<div><FontAwesome name="code-fork" className="repoIcon"/>{project["forks_count"]}</div>
+						<div><span className="icon-code-fork repoIcon"></span>{project["forks_count"]}</div>
 					</td>
 				</tr>);
 		});
