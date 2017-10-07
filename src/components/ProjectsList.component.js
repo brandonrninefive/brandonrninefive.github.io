@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import $ from 'jquery';
 import {Table} from 'reactstrap';
 import FontAwesome from 'react-fontawesome';
 
@@ -24,14 +23,13 @@ class ProjectsList extends Component {
 	}
 
 	getProject(projectName) {
-		
-		$.get({
-			url: "https://api.github.com/repos/brandonrninefive/" + projectName,
-			type: "GET",
-			data: {},
-			success: function(data) {
-				var projects = this.state.projects;
-				projects.push(data);
+		var xhr = new XMLHttpRequest();
+		xhr.open("GET", "https://api.github.com/repos/brandonrninefive/" + projectName);
+		xhr.onload = function() {
+			var projects = [];
+			if(xhr.status === 200) {
+				projects = this.state.projects;
+				projects.push(JSON.parse(xhr.responseText));
 				projects.sort(function(a, b) {
 					if(a["subscribers_count"] < b["subscribers_count"]) {
 						return 1;
@@ -60,19 +58,16 @@ class ProjectsList extends Component {
 					return 0;
 				});
 				this.setState({projects: projects});
-			}.bind(this),
-			error: function(data) {
-				var projects = [];
-				if(data.status === 403) {
-					projects.push("403 error");
-				}
-				else {
-					projects.push("error");
-				}
-				this.setState({projects: projects});
-			}.bind(this),
-			dataType: "json"
-		});	
+			}
+			else if(xhr.status === 403) {
+				projects.push("403 error");
+			}
+			else {
+				projects.push("error");
+			}
+			this.setState({projects: projects});
+		}.bind(this);
+		xhr.send();
 	}
 
 	getProjects() {
@@ -83,29 +78,25 @@ class ProjectsList extends Component {
 	}
 
 	getContribution(contributionObj) {
-	
-		$.ajax({
-			url: "https://api.github.com/repos/" + contributionObj["repo_owner"]  + "/" + contributionObj["repo"] + "/pulls/" + contributionObj["request_number"],
-			type: "GET",
-			data: {},
-			success: function(data) {
-				var contributions = this.state.contributions;
-				contributions.push(data);
+		var xhr = new XMLHttpRequest();
+		xhr.open("GET", "https://api.github.com/repos/" + contributionObj["repo_owner"]  + "/" + contributionObj["repo"] + "/pulls/" + contributionObj["request_number"]);
+		xhr.onload = function() {
+			var contributions = [];
+			if(xhr.status === 200) {
+				contributions = this.state.contributions;
+				contributions.push(JSON.parse(xhr.responseText));
 				contributions.sort();
 				this.setState({contributions: contributions});
-			}.bind(this),
-			error: function(data) {
-				var contributions = [];
-				if(data.status === 403) {
-					contributions.push("403 error");
-				}
-				else {
-					contributions.push("error");
-				}
-				this.setState({contributions: contributions});
-			}.bind(this),
-			dataType: "json"
-		});	
+			}
+			else if(xhr.status === 403) {
+				contributions.push("403 error");
+			}
+			else {
+				contributions.push("error");
+			}
+			this.setState({contributions: contributions});
+		}.bind(this);
+		xhr.send();
 	}
 	
 	getContributions() {
