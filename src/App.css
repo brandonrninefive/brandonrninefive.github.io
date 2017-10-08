@@ -116,11 +116,7 @@ h2 {
 	text-decoration: none;
 }
 
-.socialMediaButton:hover {
-	text-decoration: none;
-}
-
-.socialMediaButton:selection {
+.socialMediaButton:hover, .socialMediaButton:active, .socialMediaButton:link, .socialMediaButton:visited {
 	text-decoration: none;
 }
 
