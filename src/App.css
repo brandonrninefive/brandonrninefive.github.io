@@ -106,7 +106,10 @@ h2 {
 }
 
 .socialMediaDiv {
-	text-align:center;
+	padding-left:1vw;
+	padding-right: 1vw;
+	text-align: center;
+	word-wrap: break-word;
 }
 
 .socialMediaButton {
@@ -217,12 +220,12 @@ footer {
 	.unselectedButton, .selectedButton {
 		font-size: 1.2vw;
 		width:10vw;
-		height: 5vh;
+		height: 4vh;
 	}
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
 	.navigatorPage {
 		max-width: 90%;

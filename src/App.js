@@ -29,9 +29,9 @@ const socialMediaPage = (<Card>
 				<CardHeader>Social Media</CardHeader>
 				<CardBlock>
 					<div className="socialMediaDiv">
-						<a className="socialMediaButton" href="https://twitter.com/RugsTweets" target="_blank" rel="noopener noreferrer"><i className="icon-twitter"></i></a>
-						<a className="socialMediaButton" href="https://github.com/brandonrninefive" target="_blank" rel="noopener noreferrer"><i className="icon-github-alt"></i></a>
-						<a className="socialMediaButton" href="https://www.linkedin.com/in/brandonrninefive/" target="_blank" rel="noopener noreferrer"><i className="icon-linkedin"></i></a>
+						<a className="socialMediaButton" href="https://twitter.com/RugsTweets" target="_blank" rel="noopener noreferrer"><span className="icon-twitter"></span></a>
+						<a className="socialMediaButton" href="https://github.com/brandonrninefive" target="_blank" rel="noopener noreferrer"><span className="icon-github-alt"></span></a>
+						<a className="socialMediaButton" href="https://www.linkedin.com/in/brandonrninefive/" target="_blank" rel="noopener noreferrer"><span className="icon-linkedin"></span></a>
 					</div>
 				</CardBlock>
 				<CardFooter>My profiles around the web.</CardFooter>
