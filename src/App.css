@@ -113,6 +113,15 @@ h2 {
 	font-size: 10vw;
 	padding-left: 2vw;
 	padding-right: 2vw;
+	text-decoration: none;
+}
+
+.socialMediaButton:hover {
+	text-decoration: none;
+}
+
+.socialMediaButton:selection {
+	text-decoration: none;
 }
 
 .buttonGroup-appear {
