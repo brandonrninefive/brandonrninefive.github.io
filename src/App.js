@@ -8,7 +8,7 @@ import ProjectsList from './components/ProjectsList.component';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 const pullRequests = [{"repo_owner": "Microsoft", "repo": "vscode", "request_number": "29860"}];
-const projectNames = ["Selenium-Shoe-Bot-NakedCPH", "prIDE", "Selenium-Google-Search-Console-Bot", "TwitchInputBot"];
+const projectNames = ["Selenium-Shoe-Bot-NakedCPH", "prIDE", "Selenium-Google-Search-Console-Bot", "add-redux"];
 const pdfIcon = (<span className="icon-file-pdf-o linkIcon"></span>);
 const aboutMePage = (<Card>
 			<CardHeader>About Me</CardHeader>
