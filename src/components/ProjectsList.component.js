@@ -30,16 +30,16 @@ class ProjectsList extends Component {
 				projects = this.state.projects;
 				projects.push(JSON.parse(xhr.responseText));
 				projects.sort(function(a, b) {
-					if(a["subscribers_count"] < b["subscribers_count"]) {
-						return 1;
-					}
-					else if(a["subscribers_count"] > b["subscribers_count"]) {
-						return -1;
-					}
 					if(a["stargazers_count"] < b["stargazers_count"]) {
 						return 1;
 					}
 					else if(a["stargazers_count"] > b["stargazers_count"]) {
+						return -1;
+					}
+					if(a["subscribers_count"] < b["subscribers_count"]) {
+						return 1;
+					}
+					else if(a["subscribers_count"] > b["subscribers_count"]) {
 						return -1;
 					}
 					if(a["forks_count"] < b["forks_count"]) {
