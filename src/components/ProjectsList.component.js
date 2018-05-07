@@ -77,25 +77,28 @@ class ProjectsList extends Component {
 	}
 
 	getContribution(contributionObj) {
-		var xhr = new XMLHttpRequest();
-		xhr.open("GET", "https://api.github.com/repos/" + contributionObj["repo_owner"]  + "/" + contributionObj["repo"] + "/pulls/" + contributionObj["request_number"]);
-		xhr.onload = function() {
-			var contributions = [];
-			if(xhr.status === 200) {
-				contributions = this.state.contributions;
-				contributions.push(JSON.parse(xhr.responseText));
-				contributions.sort();
-				this.setState({contributions: contributions});
-			}
-			else if(xhr.status === 403) {
-				contributions.push("403 error");
-			}
-			else {
-				contributions.push("error");
-			}
-			this.setState({contributions: contributions});
-		}.bind(this);
-		xhr.send();
+        for(var i = 0; i  < contributionObj["request_numbers"].length; i++) {
+            let xhr = new XMLHttpRequest();
+            xhr.open("GET", "https://api.github.com/repos/" + contributionObj["repo_owner"]  + "/" + contributionObj["repo"] + "/pulls/" + contributionObj["request_numbers"][i]);
+            console.log("https://api.github.com/repos/" + contributionObj["repo_owner"]  + "/" +                         contributionObj["repo"] + "/pulls/" + contributionObj["request_numbers"][i]);
+            xhr.onload = function() {
+                var contributions = [];
+                if(xhr.status === 200) {
+                    contributions = this.state.contributions;
+                    console.log(JSON.parse(xhr.responseText));
+                    contributions.push(JSON.parse(xhr.responseText));
+                    contributions.sort();
+                }
+                else if(xhr.status === 403) {
+                    contributions.push("403 error");
+                }
+                else {
+                    contributions.push("error");
+                }
+                this.setState({contributions: contributions});
+            }.bind(this);
+            xhr.send();
+        }
 	}
 	
 	getContributions() {
