@@ -7,8 +7,8 @@ import Navigator from './components/Navigator.component';
 import ProjectsList from './components/ProjectsList.component';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
-const pullRequests = [{"repo_owner": "nodejs", "repo": "node", "request_numbers": ["20321"]}, {"repo_owner": "Microsoft", "repo": "vscode", "request_numbers": ["29860", "40405"]},{"repo_owner": "ReactTraining", "repo": "react-router", "request_numbers": ["6118"]}];
-const projectNames = ["add-redux", "prIDE", "Selenium-Shoe-Bot-NakedCPH", "custom-react-big-calendar", "RaiGames-Bot"];
+const pullRequestsFile = "pullRequests.json";
+const projectsFile = "projectNames.json";
 const pdfIcon = (<span className="icon-file-pdf-o linkIcon"></span>);
 const aboutMePage = (<Card>
 			<CardHeader>About Me</CardHeader>
@@ -21,7 +21,7 @@ const aboutMePage = (<Card>
 
 const projectsPage = (<Card>
 			<CardHeader>Projects and Contributions</CardHeader>
-			<ProjectsList projectNames={projectNames} pullRequests={pullRequests}/>
+			<ProjectsList projectsFile={projectsFile} pullRequestsFile={pullRequestsFile}/>
 			<CardFooter>Some of my latest and most popular projects and contributions. This list is generated with a little help from the <a href="https://developer.github.com/v3/" target="_blank" rel="noopener noreferrer">GitHub API</a>.</CardFooter>
 		      </Card>);
 
