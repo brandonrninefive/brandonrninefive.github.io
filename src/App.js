@@ -15,7 +15,7 @@ const aboutMePage = (<Card>
 			<CardBlock>
 				<img className="img-circle portraitImage" src={portrait} alt="Portrait"/>
 			</CardBlock>
-			<CardFooter>Hey there! I'm a software engineer in the NJ/NY area with a B.S in computer science and a minor in applied mathematics from NJIT. When I was younger, I was always amazed by computers and the fact that they could do so many complex things in the blink of an eye. Over time, that amazement grew into curiousity, and I decided to delve head-first into the world of programming during my freshman year of highschool. Today, I'm a systems developer at Prudential Financial, where I've helped develop a variety of web tools and scripts for generating reports and monitoring Hadoop clusters. Aside from that, I've also developed various programs, apps, and games, both for work and for my own enjoyment. One day, I dream of changing the world for the better with my programming abilities and the lessons that I learn throughout my career.
+			<CardFooter>Thanks for stopping by! I'm a software engineer in the NJ/NY area with a B.S in computer science and a minor in applied mathematics from NJIT. Whether I'm fixing up old computers, contributing to neat open source projects, or just tinkering with my own programming projects for fun, I can truly say that I have a deep interest in all branches of computing. I also enjoy a good bite to eat. For more on my accomplishments, feel free to use the links above, or contact me with the information provided on my resume.
  			</CardFooter>
 		     </Card>);
 
@@ -47,7 +47,7 @@ class App extends Component {
 	  <ReactCSSTransitionGroup transitionName="headerGroup" transitionAppear={true} transitionAppearTimeout={1000} transitionEnter={false} transitionLeave={false}>
               <div key={0}>
                 <h1>Brandon T. Ruggles</h1>
-	        <h2>Always learning in order to make my mark one day.</h2>
+	        <h2>Software Engineer. Big dreamer. Always learning.</h2>
               </div>
 	  </ReactCSSTransitionGroup>
 	<Navigator buttonObjects={navigatorObjects}/>
