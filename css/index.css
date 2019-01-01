@@ -31,8 +31,31 @@ body{
 	border-radius: 50%;
   max-width: 200px;
 }
+@media all and (max-width: 767px) {
+  .profiles-large {
+    display: none;
+  }
+  .profiles-small {
+    text-align: center;
+    display: block;
+  }
+  .profiles-small a {
+    margin-right: 5px;
+  }
+}
+@media (min-width: 768px) {
+  .profiles-large {
+    display: block;
+  }
+  .profiles-large a {
+    margin-right: 5px;
+  }
+  .profiles-small {
+    display: none;
+  }
+}
 .end {
-  padding-bottom: 80px;
+  margin-bottom: 100px;
 }
 .footer {
   position: fixed;
@@ -42,6 +65,5 @@ body{
   background-color: #CCC;
   color: #333;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
 }
