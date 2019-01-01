@@ -1,8 +1,0 @@
-{
-    "pullRequests": [
-            {"repo_owner": "nodejs", "repo": "node", "request_numbers": ["20321"], "priority": 1},
-            {"repo_owner": "Microsoft", "repo": "vscode", "request_numbers": ["29860", "40405"], "priority": 2},
-            {"repo_owner": "ReactTraining", "repo": "react-router", "request_numbers": ["6118"], "priority": 4},
-            {"repo_owner": "bitcoin", "repo": "bitcoin", "request_numbers": ["13284"], "priority": 3}
-    ]
-}
