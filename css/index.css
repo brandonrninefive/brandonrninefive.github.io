@@ -38,6 +38,7 @@ body{
   .profiles-small {
     text-align: center;
     display: block;
+    margin-bottom: 10px;
   }
   .profiles-small a {
     margin-right: 5px;
@@ -55,7 +56,7 @@ body{
   }
 }
 .end {
-  margin-bottom: 100px;
+  margin-bottom: 160px;
 }
 .footer {
   position: fixed;
@@ -65,5 +66,8 @@ body{
   background-color: #CCC;
   color: #333;
   text-align: center;
+}
+.footer p {
+  position: relative;
   padding: 20px;
 }
