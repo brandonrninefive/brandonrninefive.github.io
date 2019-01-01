@@ -1,0 +1,47 @@
+body{
+  margin-top:60px;
+}
+.grid{
+  text-align:center;
+  font-size:10px;
+}
+.banner{
+  text-align:center;
+  padding:10px 0;
+}
+.table{
+  margin-bottom:35px;
+}
+.divider{
+  width:100%;
+  background:#CCC;
+  height:1px;
+  margin:25px 0;
+}
+.explainer{
+  font-weight:200;
+  color:#AAA;
+  margin-bottom:10px;
+}
+.portrait{
+	display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+	border-radius: 50%;
+  max-width: 200px;
+}
+.end {
+  padding-bottom: 80px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #CCC;
+  color: #333;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
