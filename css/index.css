@@ -21,6 +21,9 @@ body{
   -o-animation: 3s fadein;
   animation: 3s fadein;
 }
+p {
+	margin-bottom: 10px;
+}
 .grid{
   text-align:center;
   font-size:10px;
